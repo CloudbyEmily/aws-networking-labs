@@ -33,3 +33,17 @@ to:
 ubuntu@ip-10-0-1-228
 
 This confirmed remote access to the AWS EC2 instance.
+## My Observations
+
+- The ChromeOS Downloads folder was separate from my Linux container filesystem.
+- I had to copy the EC2 private key into my Linux environment before SSH could access it.
+- EC2 Instance Connect failed, so I diagnosed the issue by checking networking components.
+- Successful SSH changed my terminal from my local machine:
+
+  itsemilyelisabethb@penguin
+
+  to the remote EC2 server:
+
+  ubuntu@ip-10-0-1-228
+
+- This confirmed I was now administering a cloud-hosted Linux machine.
